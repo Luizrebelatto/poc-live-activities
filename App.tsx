@@ -8,15 +8,23 @@ export default function App() {
   function handleStartActivities(){
     LiveActivities.startActivity();
   }
+
+  function handleUpdateActivities(){
+    LiveActivities.updateActivity();
+  }
+
+  function handleendActivities(){
+    LiveActivities.endActivity();
+  }
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={handleStartActivities}>
         <Text style={styles.textButton}>Start</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleUpdateActivities}>
         <Text style={styles.textButton}>Update</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleendActivities}>
         <Text style={styles.textButton}>End</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
