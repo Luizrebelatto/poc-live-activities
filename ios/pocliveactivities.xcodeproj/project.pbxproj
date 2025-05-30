@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		297C09C32DE954E800681013 /* LiveActivitiesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C09C22DE954E800681013 /* LiveActivitiesModule.swift */; };
+		297C09C52DE9555000681013 /* LiveActivitiesModuleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 297C09C42DE9555000681013 /* LiveActivitiesModuleHeader.m */; };
+		297C09CC2DE95C8200681013 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297C09CB2DE95C8200681013 /* WidgetKit.framework */; };
+		297C09CE2DE95C8200681013 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297C09CD2DE95C8200681013 /* SwiftUI.framework */; };
+		297C09D12DE95C8200681013 /* LiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C09D02DE95C8200681013 /* LiveActivityBundle.swift */; };
+		297C09D32DE95C8200681013 /* LiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C09D22DE95C8200681013 /* LiveActivityLiveActivity.swift */; };
+		297C09D52DE95C8200681013 /* LiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C09D42DE95C8200681013 /* LiveActivity.swift */; };
+		297C09D72DE95C8300681013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297C09D62DE95C8300681013 /* Assets.xcassets */; };
+		297C09DB2DE95C8300681013 /* LiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 297C09CA2DE95C8200681013 /* LiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		46608D4A43313830644E3E38 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A63C63D15BF6761D8B00F /* ExpoModulesProvider.swift */; };
 		89D5929F7AC1CEBBAAC01994 /* libPods-pocliveactivities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCD35277A7F63472F8ADAF2 /* libPods-pocliveactivities.a */; };
@@ -16,10 +25,44 @@
 		FB82D8FE1E6B3433F7CE3635 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 41DD1B590EB0A9C8FED8E3EF /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		297C09D92DE95C8300681013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 297C09C92DE95C8200681013;
+			remoteInfo = LiveActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		297C09DC2DE95C8300681013 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				297C09DB2DE95C8300681013 /* LiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* pocliveactivities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocliveactivities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pocliveactivities/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pocliveactivities/Info.plist; sourceTree = "<group>"; };
+		297C09C22DE954E800681013 /* LiveActivitiesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitiesModule.swift; sourceTree = "<group>"; };
+		297C09C42DE9555000681013 /* LiveActivitiesModuleHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveActivitiesModuleHeader.m; sourceTree = "<group>"; };
+		297C09CA2DE95C8200681013 /* LiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		297C09CB2DE95C8200681013 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		297C09CD2DE95C8200681013 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		297C09D02DE95C8200681013 /* LiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityBundle.swift; sourceTree = "<group>"; };
+		297C09D22DE95C8200681013 /* LiveActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityLiveActivity.swift; sourceTree = "<group>"; };
+		297C09D42DE95C8200681013 /* LiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivity.swift; sourceTree = "<group>"; };
+		297C09D62DE95C8300681013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		297C09D82DE95C8300681013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DD1B590EB0A9C8FED8E3EF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = pocliveactivities/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6D5A63C63D15BF6761D8B00F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-pocliveactivities/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = pocliveactivities/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +81,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D5929F7AC1CEBBAAC01994 /* libPods-pocliveactivities.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297C09C72DE95C8200681013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297C09CE2DE95C8200681013 /* SwiftUI.framework in Frameworks */,
+				297C09CC2DE95C8200681013 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +115,22 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				41DD1B590EB0A9C8FED8E3EF /* PrivacyInfo.xcprivacy */,
+				297C09C22DE954E800681013 /* LiveActivitiesModule.swift */,
+				297C09C42DE9555000681013 /* LiveActivitiesModuleHeader.m */,
 			);
 			name = pocliveactivities;
+			sourceTree = "<group>";
+		};
+		297C09CF2DE95C8200681013 /* LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				297C09D02DE95C8200681013 /* LiveActivityBundle.swift */,
+				297C09D22DE95C8200681013 /* LiveActivityLiveActivity.swift */,
+				297C09D42DE95C8200681013 /* LiveActivity.swift */,
+				297C09D62DE95C8300681013 /* Assets.xcassets */,
+				297C09D82DE95C8300681013 /* Info.plist */,
+			);
+			path = LiveActivity;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -72,6 +138,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ACCD35277A7F63472F8ADAF2 /* libPods-pocliveactivities.a */,
+				297C09CB2DE95C8200681013 /* WidgetKit.framework */,
+				297C09CD2DE95C8200681013 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* pocliveactivities */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				297C09CF2DE95C8200681013 /* LiveActivity */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0CBE3CAAF70BB87D37BFFC74 /* Pods */,
@@ -102,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* pocliveactivities.app */,
+				297C09CA2DE95C8200681013 /* LiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,15 +216,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
 				48FE5AE72D63E612D03F7A21 /* [CP] Embed Pods Frameworks */,
+				297C09DC2DE95C8300681013 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				297C09DA2DE95C8300681013 /* PBXTargetDependency */,
 			);
 			name = pocliveactivities;
 			productName = pocliveactivities;
 			productReference = 13B07F961A680F5B00A75B9A /* pocliveactivities.app */;
 			productType = "com.apple.product-type.application";
+		};
+		297C09C92DE95C8200681013 /* LiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297C09DF2DE95C8300681013 /* Build configuration list for PBXNativeTarget "LiveActivityExtension" */;
+			buildPhases = (
+				297C09C62DE95C8200681013 /* Sources */,
+				297C09C72DE95C8200681013 /* Frameworks */,
+				297C09C82DE95C8200681013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveActivityExtension;
+			productName = LiveActivityExtension;
+			productReference = 297C09CA2DE95C8200681013 /* LiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,10 +251,14 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1250;
+					};
+					297C09C92DE95C8200681013 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -183,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* pocliveactivities */,
+				297C09C92DE95C8200681013 /* LiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +290,14 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				FB82D8FE1E6B3433F7CE3635 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297C09C82DE95C8200681013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297C09D72DE95C8300681013 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,16 +419,37 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				46608D4A43313830644E3E38 /* ExpoModulesProvider.swift in Sources */,
+				297C09C32DE954E800681013 /* LiveActivitiesModule.swift in Sources */,
+				297C09C52DE9555000681013 /* LiveActivitiesModuleHeader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297C09C62DE95C8200681013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297C09D12DE95C8200681013 /* LiveActivityBundle.swift in Sources */,
+				297C09D52DE95C8200681013 /* LiveActivity.swift in Sources */,
+				297C09D32DE95C8200681013 /* LiveActivityLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		297C09DA2DE95C8300681013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 297C09C92DE95C8200681013 /* LiveActivityExtension */;
+			targetProxy = 297C09D92DE95C8300681013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE1A4D5CAF322AFEA994EAC1 /* Pods-pocliveactivities.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -365,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0BD813E9920C9F94B5AF108 /* Pods-pocliveactivities.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -390,6 +514,91 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		297C09DD2DE95C8300681013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.pocliveactivities.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		297C09DE2DE95C8300681013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.pocliveactivities.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -519,6 +728,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		297C09DF2DE95C8300681013 /* Build configuration list for PBXNativeTarget "LiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297C09DD2DE95C8300681013 /* Debug */,
+				297C09DE2DE95C8300681013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

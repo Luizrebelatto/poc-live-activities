@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, NativeModules } from 'react-native';
 
 export default function App() {
+  const { LiveActivities } = NativeModules
+
+  function handleStartActivities(){
+    LiveActivities.startActivity();
+  }
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleStartActivities}>
         <Text style={styles.textButton}>Start</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
